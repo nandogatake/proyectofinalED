@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="nav-main">
+      <!-- Brand -->
+      <img src="img/brand.png" alt="UNAM" class="nav-brand">
+      <!-- Left Nav -->
+      <ul class="nav-menu">
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="Introduccion.html">Introducción</a>
+        </li>
+        <li>
+          <a href="Resumen.html">Resumen</a>
+        </li>
+        <li>
+            <a href="Ejemplos.html">Ejemplos</a>
+        </li>
+        <li>
+          <a href="Tutorial.html">Tutorial</a>
+        </li>
+        <li>
+          <a href="Bibliografia.html">Bibliografía</a>
+        </li>
+        <li>
+          <a href="Cuestionario.html">Cuestionario</a>
+        </li>
+    
+      </ul>
+
+      <!-- Right Nav -->
+      <ul class="nav-menu-right">
+        <li>
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- generar la linea abajo del buscador -->
+    <hr> 
+    <div>
+      <H1 align="center" > Ejemplos </H1>
+      <H1 align="center" >Determinación de salida para una entrada dada</H1>
+      <H1 align="center" > <img src="img/ej1.png" width="400" height="200"  /> </H1>
+      <H1>1. Indique la salida del circuito que se muestra a continuación.</H1>
+        <H1 align="center" > Solución: </H1>
+    <p>Muévase de izquierda a derecha a través del diagrama, siga la acción de cada puerta en
+      las señales de entrada. La puerta NOT cambia de P = 0 a 1, por lo que ambas entradas
+      a la puerta AND son 1, por lo que la salida de R es 1. Esto se muestra indicado en el
+      diagrama, como se muestra a continuación.
+      </p>
+      <H1 align="center" > <img src="img/ej2.png" width="400" height="200"  /> </H1>
+      <H1>2. Indique la salida del circuito que se muestra a continuación.</H1>
+      <H1 align="center" > <img src="img/ej3.png" width="400" height="200"  /> </H1>
+      <H1 align="center" > Solución: </H1>
+      <p>La salida de la puerta OR es 1 ya que una de las señales de entrada, P, es 1. La puerta
+        NOT cambia este 1 en un 0, por lo que las dos entradas a la puerta AND son 0 y
+        R = 1. Por lo tanto la salida de S es 0. A continuación se muestra el seguimiento.
+        </p>
+        <H1 align="center" > <img src="img/ej4.png" width="400" height="200"  /> </H1>
+        <p>Para construir la tabla completa de entrada/salida de un circuito, siga el circuito para
+          encontrar las señales de salida correspondientes a cada posible combinación de señales
+          de entrada.</p>
+      <H1>3. Construya la tabla de entrada/salida del siguiente circuito.</H1>
+      <H1 align="center" > <img src="img/ej5.png" width="400" height="200"  /> </H1>
+      <H1 align="center" > Solución: </H1>
+       <p>Enliste las cuatro combinaciones posibles de las señales de entrada y encuentre la
+        salida para cada una siguiendo el circuito.
+        </p> 
+      <H1 align="center" > <img src="img/ej6.png" width="400" height="200"  /> </H1>
+        <H1>4.Encuentre la expresión booleana que corresponde al circuito que se muestra a
+          continuación. Un punto indica una soldadura de dos alambres, cables que se cruzan sin un
+          punto se supone que no se tocan.
+        </H1>
+          <H1 align="center" > <img src="img/ej7.png" width="400" height="200"  /> </H1>
+          <H1 align="center" > Solución: </H1>
+          <p>De seguimiento a través del circuito de izquierda a derecha, indicando la salida de cada
+            puerta simbólicamente, como se muestra a continuación.
+            </p>
+            <H1 align="center" > <img src="img/ej8.png" width="400" height="200"  /> </H1>
+            <p>La expresión final obtenida (P v Q) ^ 7(P ^ Q), es la expresión para o exclusivo:
+              P o Q, pero no ambos.
+              </p>
+      <H1>5. Encuentre la expresión booleana que corresponde al circuito que se muestra a
+        continuación.
+      </H1>
+        <H1 align="center" > <img src="img/ej9.png" width="400" height="200"  /> </H1>
+        <p>La expresión booleana correspondiente al circuito es (P ^ Q) ^ 7 R, como se muestra
+          a continuación.
+          </p>
+          <H1 align="center" > <img src="img/ej10.png" width="400" height="200"  /> </H1>
+          <H1>6. Construya el circuito para la siguiente expresión booleana.
+            (7P ^ Q) v 7Q      
+          </H1>
+          <H1 align="center" > Solución: </H1>
+            <p>Escriba las variables de entrada en una columna en el lado izquierdo del diagrama.
+              Después en el lado derecho del diagrama a la izquierda, trabaje de la parte más externa
+              hacia la más interna. Ya que la última operación ejecutada cuando se evaluó (7P ^ Q) ^ 7Q es v, ponga una puerta OR en el extremo derecho del diagrama. Una entrada de
+              esta puerta es 7P ^ Q, por lo que dibuje una puerta AND a la izquierda de la puerta
+               OR y muestre su salida entrando en la puerta OR. Puesto que una entrada a la puerta
+                AND es 7P, dibuje una línea de P a una puerta NOT y de ahí a la puerta AND. Ya que
+                la otra entrada a la puerta AND es Q, dibuje una línea de Q directamente a la puerta
+                AND. La otra entrada a la puerta OR e 7Q, por lo que dibuje una línea de Q a la
+                puerta NOT y de la puerta NOT a la puerta OR. Se obtiene el circuito que se muestra
+                a continuación.
+                </p>
+                
+                <H1 align="center" > <img src="img/ej11.png" width="400" height="200"  /> </H1>
+                <H1>7. Construya el circuito para la siguiente expresión booleana.  b. ((P ^ Q) ^ (R ^ S)) ^ T</H1>
+                <H1 align="center" > Solución: </H1>
+                <p>Para iniciar la construcción de este circuito, ponga una puerta AND en el extremo derecho
+                  para la ^ entre ((P ^ Q) ^ (R ^ S)) y T. A la izquierda de donde puso la puerta
+                  AND corresponde al ^ entre P ^ Q y R ^ S. A la izquierda de donde puso la puerta
+                  AND corresponde a los ^ entre P y Q y entre R y S. En la figura 2.4.4 se muestra
+                  el circuito.
+                  </p>
+                  <H1 align="center" > <img src="img/ej12.png" width="400" height="200"  /> </H1>
+                  <H1>8. Diseñe un circuito para la siguiente tabla de entrada/salida:</H1>
+                  <H1 align="center" > <img src="img/ej13.png" width="400" height="200"  /> </H1>
+                  <H1 align="center" > Solución: </H1>
+                  <p>Primero construya una expresión booleana con esta tabla como su tabla de verdad.
+                    Para hacer esto identifique cada renglón para el que la salida es 1 —en este caso el primero,
+                    tercero y cuarto renglones. Para cada uno de estos renglones construya una expresión 
+                    que produzca un 1 (o verdadero) para la combinación exacta de valores de entrada para
+                    ese renglón y un 0 (o falso) para todas las otras combinaciones de los valores de entrada.
+                    Por ejemplo, la expresión para el primer renglón es P ^ Q ^ R porque P ^ Q ^ R es 1
+                    sí P = 1 y Q = 1 y R = 1 y es 0 para todos los demás valores de P, Q y R. La expresión
+                    del tercer renglón es P ^ 7 Q ^ R ya que P ^ 7 Q ^ R es 1 si P = 1 y Q = 0 y R = 1 y es 0 para todos los demás valores de P, Q y R. Del mismo modo la expresión del cuarto
+                    renglón es P ^ 7Q ^ 7R.
+                    </p>
+                    <p>Ahora, cualquier expresión booleana con la tabla dada como su tabla de verdad tiene
+                      el valor 1 en el caso P ^ Q ^ R = 1, o en caso de P ^ 7Q ^ R = 1, o en caso P ^ 7Q ^ 7R = 1 y en ningún otro caso. De lo que se deduce que una expresión booleana con la
+                      tabla de verdad dada es:
+                      </p>
+                      <p>(P ^ Q ^ R) V (P ^ 7Q ^ R) V (P ^ 7Q ^ 7R).</p>
+                      <H1 align="center" > <img src="img/ej15.png" width="400" height="200"  /> </H1>
+                      <H1>9. Demuestre que dos circuitos son equivalentes</H1>
+                      <H1 align="center" > <img src="img/ej16.png" width="400" height="200"  /> </H1>
+                      <p>Las expresiones booleanas que corresponden a los circuitos a) y b) son
+                        ((P ∧ 7Q) ∨ (P ∧ Q)) ∨ Q y P ∧ Q, respectivamente.
+                        </p>
+                      <H1 align="center" > <img src="img/ej17.png" width="400" height="200"  /> </H1>
+                      <H1>10.Dibuja el circuito de la expresión 7(A^B) </H1>
+                  <H1 align="center" > Solución: </H1>
+                  <H1 align="center" > <img src="img/ej18.JPG" width="400" height="200"  /> </H1>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Universidad Nacional Autónoma de México</p>
+  </footer>
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

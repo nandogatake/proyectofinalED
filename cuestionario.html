@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="nav-main">
+      <!-- Brand -->
+      <img src="img/brand.png" alt="UNAM" class="nav-brand">
+      <!-- Left Nav -->
+      <ul class="nav-menu">
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="Introduccion.html">Introducción</a>
+        </li>
+        <li>
+          <a href="Resumen.html">Resumen</a>
+        </li>
+        <li>
+          <a href="Ejemplos.html">Ejemplos</a>
+        </li>
+        <li>
+          <a href="Tutorial.html">Tutorial</a>
+        </li>
+        <li>
+          <a href="Bibliografia.html">Bibliografía</a>
+        </li>
+        <li>
+          <a href="Cuestionario.html">Cuestionario</a>
+        </li>
+    
+      </ul>
+
+      <!-- Right Nav -->
+      <ul class="nav-menu-right">
+        <li>
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- generar la linea abajo del buscador -->
+  <hr> 
+  </div>
+  <!-- Footer Links -->
+  <script language="JavaScript1.1"> 
+  </script> <SCRIPT LANGUAGE="JavaScript">
+  var ans = new Array;
+  var done = new Array;
+  var score = 0;
+  
+  ans[1] = "c";
+  ans[2] = "d";
+  ans[3] = "b";
+  ans[4] = "b";
+  ans[5] = "a";
+  ans[6] = "b";
+  ans[7] = "c";
+  ans[8] = "b";
+  ans[9] = "b";
+  ans[10] = "d";
+  ans[11] = "b";
+  ans[12] = "b";
+  ans[13] = "a";
+  ans[14] = "b";
+  ans[15] = "a";
+  ans[16] = "b";
+  ans[17] = "b";
+  ans[18] = "a";
+  ans[19] = "b";
+  ans[20] = "d";
+  ans[21] = "c";
+  ans[22] = "d"; 
+  ans[23] = "a";
+  ans[24] = "a";
+  ans[25] = "a";
+  ans[26] = "c";
+  ans[27] = "d";
+  ans[28] = "b";
+  ans[29] = "b";
+  ans[30] = "d";
+  ans[31] = "b";
+  ans[32] = "b";
+  ans[33] = "b";
+  ans[34] = "c";
+  ans[35] = "c";
+  ans[36] = "b";
+  ans[37] = "a";
+  ans[38] = "d";
+  ans[39] = "b";
+  ans[40] = "c";
+  ans[41] = "d";
+  ans[42] = "d";
+  
+  function Engine(question, answer) 
+  {	if (answer != ans[question]) {
+                  if (!done[question]) {done[question] = -1;}
+                    else { alert("Esta pregunta fue contestada. Intente la próxima vez.");  }
+  }
+    else {
+      if (!done[question]) {
+                done[question] = -1;
+                  score++;
+  }		else {		
+        alert("Esta pregunta ya ha sido contestada, por el momento no puede rectificarla."); }
+     }
+  }
+  function closeWindow() 
+    {
+    window.close()
+    }
+  function NextLevel () { 
+      if (score === 10) {alert("¡Todas son correctas!");}
+      if (score >= 0 && score < 10) { 
+        alert("Tu puntuación es: "+parseInt(score*10)+"\r ")
+        
+          }                                            
+        else {if(score >= 0 && score < 10) {
+          alert("Tu puntuación es: "+parseInt(score*10)+"\r ")
+          
+        }                                          
+        }
+    }
+  function numero(){ 
+  return parseInt(Math.random()*42);  
+  } 
+  var num= new Array(); 
+  var pre= new Array();
+  var a,i,n; 
+  for (n=0;n<=9;){ 
+  a=numero(); 
+  num[n]=a;  
+  repetido=0; 
+  for(i=0;i<(num.length)-1;i++){ 
+  if (num[i]==a) 
+  repetido=1; 
+  } 
+  if (repetido==0) n++; 
+  }
+   
+  //Preguntas y respuestas
+  pre[0]= '<font color="white"><b><font size=4><img src="img/cuestionario/a1.png" width="400" height="200" /><br>1)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="a1" onClick="Engine(1,  this.value)">a)7A v B<br><input type=radio value="b" name="a1" onClick="Engine(1,  this.value)">b)A ꓥ 7B<br><input type=radio value="c" name="a1" onClick="Engine(1,  this.value)">c)A ꓥ B<br><input type=radio value="d" name="a1" onClick="Engine(1,  this.value)">d)A v B<br></font>';
+  pre[1]= '<font color="white"><b><font size=4><img src="img/cuestionario/a2.png" width="400" height="200" /><br>2)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="b1" onClick="Engine(2,  this.value)">a)7(A v C)<br><input type=radio value="b" name="b1" onClick="Engine(2,  this.value)">b)7(A ꓥ C)<br><input type=radio value="c" name="b1" onClick="Engine(2,  this.value)">c)A ꓥ C<br><input type=radio value="d" name="b1" onClick="Engine(2,  this.value)">d)A v C<br></font>';
+  pre[2]= '<font color="white"><b><font size=4><img src="img/cuestionario/a3.png" width="400" height="200" /><br>3)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="d1" onClick="Engine(3,  this.value)">a)A ꓥ B<br><input type=radio value="b" name="d1" onClick="Engine(3,  this.value)">b)7(A ꓥ B)<br><input type=radio value="c" name="d1" onClick="Engine(3,  this.value)">c)(7A ꓥ 7B)<br><input type=radio value="d" name="d1" onClick="Engine(3,  this.value)">d)7(A v B)<br></font>';
+  pre[3]= '<font color="white"><b><font size=4><img src="img/cuestionario/a4.png" width="400" height="200" /><br>4)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="d1" onClick="Engine(4,  this.value)">a)A v C<br><input type=radio value="b" name="d1" onClick="Engine(4,  this.value)">b)7(A v C)<br><input type=radio value="c" name="d1" onClick="Engine(4,  this.value)">c)7(A ꓥ C)<br><input type=radio value="d" name="d1" onClick="Engine(4,  this.value)">d)(7A v 7C)<br></font>';
+  pre[4]= '<font color="white"><b><font size=4><img src="img/cuestionario/a5.png" width="400" height="200" /><br>5)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="e1" onClick="Engine(5,  this.value)">a)7A<br><input type=radio value="b" name="e1" onClick="Engine(5,  this.value)">b)A<br><input type=radio value="c" name="e1" onClick="Engine(5,  this.value)">c)7(7A)<br><input type=radio value="d" name="e1" onClick="Engine(5,  this.value)">d)77A<br></font>';
+  pre[5]= '<font color="white"><b><font size=4><img src="img/cuestionario/a6.png" width="400" height="200" /><br>6)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="f1" onClick="Engine(6,  this.value)">a)A v B<br><input type=radio value="b" name="f1" onClick="Engine(6,  this.value)">b)7(A ꓥ B)<br><input type=radio value="c" name="f1" onClick="Engine(6,  this.value)">c)7(A v B)<br><input type=radio value="d" name="f1" onClick="Engine(6,  this.value)">d)(A ꓥ B)<br></font>';
+  pre[6]= '<font color="white"><b><font size=4><img src="img/cuestionario/a7.png" width="400" height="200" /><br>7)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="g1" onClick="Engine(7,  this.value)">a)(A v 7C)<br><input type=radio value="b" name="g1" onClick="Engine(7,  this.value)">b)(A v C)<br><input type=radio value="c" name="g1" onClick="Engine(7,  this.value)">c)7(A v C)<br><input type=radio value="d" name="g1" onClick="Engine(7,  this.value)">d)(7A v C)<br></font>';
+  pre[7]= '<font color="white"><b><font size=4><img src="img/cuestionario/a8.png" width="400" height="200" /><br>8)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="h1" onClick="Engine(8,  this.value)">a)(A ꓥ B) ꓥ C<br><input type=radio value="b" name="h1" onClick="Engine(8,  this.value)">b)(A ꓥ B) ꓥ 7C<br><input type=radio value="c" name="h1" onClick="Engine(8,  this.value)">c)7(A ꓥ B) ꓥ C<br><input type=radio value="d" name="h1" onClick="Engine(8,  this.value)">d)(7A ꓥ 7B) ꓥ 7C<br></font>';
+  pre[8]= '<font color="white"><b><font size=4><img src="img/cuestionario/a9.png" width="400" height="200" /><br>9)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="i1" onClick="Engine(9,  this.value)">a)(7A ꓥ 7Q) v 7Q<br><input type=radio value="b" name="i1" onClick="Engine(9,  this.value)">b)(7A ꓥ Q) v Q<br><input type=radio value="c" name="i1" onClick="Engine(9,  this.value)">c)7(A ꓥ Q) v Q<br><input type=radio value="d" name="i1" onClick="Engine(9,  this.value)">d)7(7A ꓥ Q) v 7Q<br></font>';
+  pre[9]= '<font color="white"><b><font size=4><img src="img/cuestionario/a10.png" width="400" height="200" /><br>10)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="k1" onClick="Engine(10, this.value)">a)((A ꓥ B) ꓥ (C v D)) ꓥ E<br><input type=radio value="b" name="k1" onClick="Engine(10, this.value)">b)((A v B) ꓥ (C v D)) ꓥ E<br><input type=radio value="c" name="k1" onClick="Engine(10, this.value)">c)((A v B) ꓥ (C ꓥ D)) v E<br><input type=radio value="d" name="k1" onClick="Engine(10, this.value)">d)((A ꓥ B) ꓥ (C ꓥ D)) ꓥ E<br></font>';
+  pre[10]='<font color="white"><b><font size=4><img src="img/cuestionario/a11.png" width="400" height="200" /><br>11)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="l1" onClick="Engine(11, this.value)">a)7((A ꓥ B) ꓥ (C ꓥ D)) ꓥ 7E<br><input type=radio value="b" name="l1" onClick="Engine(11, this.value)">b)((A ꓥ B) ꓥ (C ꓥ D)) ꓥ 7E<br><input type=radio value="c" name="l1" onClick="Engine(11, this.value)">c)7(((A ꓥ B) ꓥ (C ꓥ D)) ꓥ 7E)<br><input type=radio value="d" name="l1" onClick="Engine(11, this.value)">d)(7(A ꓥ B) ꓥ 7(C ꓥ D)) ꓥ 7E<br></font>';
+  pre[11]='<font color="white"><b><font size=4><img src="img/cuestionario/a12.png" width="400" height="200" /><br>12)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="m1" onClick="Engine(12, this.value)">a)7((A ꓥ B) ꓥ (C ꓥ D)) ꓥ E)<br><input type=radio value="b" name="m1" onClick="Engine(12, this.value)">b)(7(A ꓥ B) ꓥ (C ꓥ D)) ꓥ 7E<br><input type=radio value="c" name="m1" onClick="Engine(12, this.value)">c)(7A ꓥ 7B) ꓥ (C ꓥ D)) ꓥ E<br><input type=radio value="d" name="m1" onClick="Engine(12, this.value)">d)(7A ꓥ 7B) ꓥ (C ꓥ D)) ꓥ 7E<br></font>';
+  pre[12]='<font color="white"><b><font size=4><img src="img/cuestionario/a13.png" width="400" height="200" /><br>13)¿Cuál es la expresión del circuito?</font></b></font><p><font color="white" size=4><input type=radio value="a" name="n1" onClick="Engine(13, this.value)">a)(7(A ꓥ B) ꓥ (C v D)) ꓥ 7E<br><input type=radio value="b" name="n1" onClick="Engine(13, this.value)">b)((7A ꓥ B) ꓥ (7C v D)) ꓥ 7E<br><input type=radio value="c" name="n1" onClick="Engine(13, this.value)">c)((A v B) ꓥ (C v D)) ꓥ 7E<br><input type=radio value="d" name="n1" onClick="Engine(13, this.value)">d)(7(7A ꓥ 7B) ꓥ 7(7C v 7D)) ꓥ 7E<br></font>';
+  pre[13]='<font color="white"><b><font size=4>14)Es equivalente a una compuerta AND seguida por una NOT</font></b></font><p><font color="white" size=4><input type=radio value="a" name="o1" onClick="Engine(14, this.value)">a)AND<br><input type=radio value="b" name="o1" onClick="Engine(14, this.value)">b)NAND<br><input type=radio value="c" name="o1" onClick="Engine(14, this.value)">c)AND-OR<br><input type=radio value="d" name="o1" onClick="Engine(14, this.value)">d)NOT<br></font>';
+  pre[14]='<font color="white"><b><font size=4>15)Los circuitos lógicos son elaborados a partir de: </font></b></font><p><font color="white" size=4><input type=radio value="a" name="p1" onClick="Engine(15, this.value)">a)Compuertas lógicas <br><input type=radio value="b" name="p1" onClick="Engine(15, this.value)">b)Cualquier circuito<br><input type=radio value="c" name="p1" onClick="Engine(15, this.value)">c)Dispositivo de entrada en L<br><input type=radio value="d" name="p1" onClick="Engine(15, this.value)">d)Una señal<br></font>';
+  pre[15]='<font color="white"><b><font size=4>16)Circuito lógico que corresponde a una suma de productos</font></b></font><p><font color="white" size=4><input type=radio value="a" name="q1" onClick="Engine(16, this.value)">a)AND <br><input type=radio value="b" name="q1" onClick="Engine(16, this.value)">b)AND-OR<br><input type=radio value="c" name="q1" onClick="Engine(16, this.value)">c)OR<br><input type=radio value="d" name="q1" onClick="Engine(16, this.value)">d)NOT<br></font>';
+  pre[16]='<font color="white"><b><font size=4>17)Circuito lógico que corresponde a una suma </font></b></font><p><font color="white" size=4><input type=radio value="a" name="r1" onClick="Engine(17, this.value)">a)AND<br><input type=radio value="b" name="r1" onClick="Engine(17, this.value)">b)OR<br><input type=radio value="c" name="r1" onClick="Engine(17, this.value)">c)NOT<br><input type=radio value="d" name="r1" onClick="Engine(17, this.value)">d)NAND<br></font>';
+  pre[17]='<font color="white"><b><font size=4>18)Circuito lógico que corresponde a un producto</font></b></font><p><font color="white" size=4><input type=radio value="a" name="s1" onClick="Engine(18, this.value)">a)AND<br><input type=radio value="b" name="s1" onClick="Engine(18, this.value)">b)OR<br><input type=radio value="c" name="s1" onClick="Engine(18, this.value)">c)NOT<br><input type=radio value="d" name="s1" onClick="Engine(18, this.value)">d)NOR<br></font>';
+  pre[18]='<font color="white"><b><font size=4>19)Actúa como una puerta OR seguida de una puerta NOT</font></b></font><p><font color="white" size=4><input type=radio value="a" name="t1" onClick="Engine(19, this.value)">a)NOT<br><input type=radio value="b" name="t1" onClick="Engine(19, this.value)">b)NOR<br><input type=radio value="c" name="t1" onClick="Engine(19, this.value)">c)NAND<br><input type=radio value="d" name="t1" onClick="Engine(19, this.value)">d)AND<br></font>';
+  pre[19]='<font color="white"><b><font size=4>20)es un circuito con una señal de entrada y una señal de salida</font></b></font><p><font color="white" size=4><input type=radio value="a" name="u1" onClick="Engine(20, this.value)">a)OR<br><input type=radio value="b" name="u1" onClick="Engine(20, this.value)">b)NAND<br><input type=radio value="c" name="u1" onClick="Engine(20, this.value)">c)AND<br><input type=radio value="d" name="u1" onClick="Engine(20, this.value)">d)NOT<br></font>';
+  pre[20]='<font color="white"><b><font size=4>21)A esta puerta tambien se le conoce como inversor</font></b></font><p><font color="white" size=4><input type=radio value="a" name="v1" onClick="Engine(21, this.value)">a)AND<br><input type=radio value="b" name="v1" onClick="Engine(21, this.value)">b)OR<br><input type=radio value="c" name="v1" onClick="Engine(21, this.value)">c)NOT<br><input type=radio value="d" name="v1" onClick="Engine(21, this.value)">d)NOR<br></font>';
+  pre[21]='<font color="white"><b><font size=4>22)Al pasar por una compuerta NOT que sucede al valor de entrada</font></b></font><p><font color="white" size=4><input type=radio value="a" name="w1" onClick="Engine(22, this.value)">a)se cambia a 1 siempre<br><input type=radio value="b" name="w1" onClick="Engine(22, this.value)">b)se cambia a 0 siempre<br><input type=radio value="c" name="w1" onClick="Engine(22, this.value)">c)se queda igual<br><input type=radio value="d" name="w1" onClick="Engine(22, this.value)">d)se invierte el valor<br></font>';
+  pre[22]='<font color="white"><b><font size=4>23)Circuito donde si las dos señales de entrada son 1, entonces la señal de salida es 1</font></b></font><p><font color="white" size=4><input type=radio value="a" name="x1" onClick="Engine(23, this.value)">a)AND<br><input type=radio value="b" name="x1" onClick="Engine(23, this.value)">b)OR<br><input type=radio value="c" name="x1" onClick="Engine(23, this.value)">c)NOT<br><input type=radio value="d" name="x1" onClick="Engine(23, this.value)">d)NOR<br></font>';
+  pre[23]='<font color="white"><b><font size=4>24)Circuito donde si las dos señales de entrada son 0, entonces la señal de salida es 0</font></b></font><p><font color="white" size=4><input type=radio value="a" name="y1" onClick="Engine(24, this.value)">a)OR<br><input type=radio value="b" name="y1" onClick="Engine(24, this.value)">b)AND<br><input type=radio value="c" name="y1" onClick="Engine(24, this.value)">c)NAND<br><input type=radio value="d" name="y1" onClick="Engine(24, this.value)">d)NOT<br></font>';
+  pre[24]='<font color="white"><b><font size=4><img src="img/cuestionario/a1.png" width="400" height="200" /><br>25)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="z1" onClick="Engine(25, this.value)">a)A*B<br><input type=radio value="b" name="z1" onClick="Engine(25, this.value)">b)A+B<br><input type=radio value="c" name="z1" onClick="Engine(25, this.value)">c)B<br><input type=radio value="d" name="z1" onClick="Engine(25, this.value)">d)A<br></font>';
+  pre[25]='<font color="white"><b><font size=4><img src="img/cuestionario/a2.png" width="400" height="200" /><br>26)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="a2" onClick="Engine(26, this.value)">a)A*C<br><input type=radio value="b" name="a2" onClick="Engine(26, this.value)">b)A<br><input type=radio value="c" name="a2" onClick="Engine(26, this.value)">c)A+C<br><input type=radio value="d" name="a2" onClick="Engine(26, this.value)">d)C<br></font>';
+  pre[26]='<font color="white"><b><font size=4><img src="img/cuestionario/a3.png" width="400" height="200" /><br>27)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="b2" onClick="Engine(27, this.value)">a)(7A*B)<br><input type=radio value="b" name="b2" onClick="Engine(27, this.value)">b)(7A*7B)<br><input type=radio value="c" name="b2" onClick="Engine(27, this.value)">c)7(A+B)<br><input type=radio value="d" name="b2" onClick="Engine(27, this.value)">d)7(A*B)<br></font>';
+  pre[27]='<font color="white"><b><font size=4><img src="img/cuestionario/a4.png" width="400" height="200" /><br>28)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="c2" onClick="Engine(28, this.value)">a)7(A*B)<br><input type=radio value="b" name="c2" onClick="Engine(28, this.value)">b)7(A+B)<br><input type=radio value="c" name="c2" onClick="Engine(28, this.value)">c)(A+B)<br><input type=radio value="d" name="c2" onClick="Engine(28, this.value)">d)7(7A+7B)<br></font>';
+  pre[28]='<font color="white"><b><font size=4><img src="img/cuestionario/a5.png" width="400" height="200" /><br>29)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="d2" onClick="Engine(29, this.value)">a)7(7A)<br><input type=radio value="b" name="d2" onClick="Engine(29, this.value)">b)7A<br><input type=radio value="c" name="d2" onClick="Engine(29, this.value)">c)A<br><input type=radio value="d" name="d2" onClick="Engine(29, this.value)">d)77A<br></font>';
+  pre[29]='<font color="white"><b><font size=4><img src="img/cuestionario/a6.png" width="400" height="200" /><br>30)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="e2" onClick="Engine(30, this.value)">a)(A*B)<br><input type=radio value="b" name="e2" onClick="Engine(30, this.value)">b)7(A*7B)<br><input type=radio value="c" name="e2" onClick="Engine(30, this.value)">c)7(7A*B)<br><input type=radio value="d" name="e2" onClick="Engine(30, this.value)">d)7(A*B)<br></font>';
+  pre[30]='<font color="white"><b><font size=4><img src="img/cuestionario/a7.png" width="400" height="200" /><br>31)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="f2" onClick="Engine(31, this.value)">a)7(A*C)<br><input type=radio value="b" name="f2" onClick="Engine(31, this.value)">b)7(A+C)<br><input type=radio value="c" name="f2" onClick="Engine(31, this.value)">c)(A+C)<br><input type=radio value="d" name="f2" onClick="Engine(31, this.value)">d)7(77A*77C)<br></font>';
+  pre[31]='<font color="white"><b><font size=4><img src="img/cuestionario/a8.png" width="400" height="200" /><br>32)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="g2" onClick="Engine(32, this.value)">a)(A+B)*7C<br><input type=radio value="b" name="g2" onClick="Engine(32, this.value)">b)(A*B)*7C<br><input type=radio value="c" name="g2" onClick="Engine(32, this.value)">c)(A+B)+7C<br><input type=radio value="d" name="g2" onClick="Engine(32, this.value)">d)(A+B)+C<br></font>';
+  pre[32]='<font color="white"><b><font size=4><img src="img/cuestionario/a9.png" width="400" height="200" /><br>33)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="h2" onClick="Engine(33, this.value)">a)(A*B)*7B<br><input type=radio value="b" name="h2" onClick="Engine(33, this.value)">b)(7A*B)+7B<br><input type=radio value="c" name="h2" onClick="Engine(33, this.value)">c)(7A*7B)+7B<br><input type=radio value="d" name="h2" onClick="Engine(33, this.value)">d)(A*7B)+7B<br></font>';
+  pre[33]='<font color="white"><b><font size=4><img src="img/cuestionario/a10.png" width="400" height="200" /><br>34)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="i2" onClick="Engine(34, this.value)">a)((A*B)*(C+D))+E<br><input type=radio value="b" name="i2" onClick="Engine(34, this.value)">b)((A*B)*(C*D))+E<br><input type=radio value="c" name="i2" onClick="Engine(34, this.value)">c)((A*B)*(C*D))*E<br><input type=radio value="d" name="i2" onClick="Engine(34, this.value)">d)((A+B)*(C*D))*E<br></font>';
+  pre[34]='<font color="white"><b><font size=4><img src="img/cuestionario/a11.png" width="400" height="200" /><br>35)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="j2" onClick="Engine(35, this.value)">a)((A*7B)*(7C*D))*7E<br><input type=radio value="b" name="j2" onClick="Engine(35, this.value)">b)((A*B)*7(C*D))*7E<br><input type=radio value="c" name="j2" onClick="Engine(35, this.value)">c)((A*B)*(C*D))*7E<br><input type=radio value="d" name="j2" onClick="Engine(35, this.value)">d)((A*B)*(C*D))*E<br></font>';
+  pre[35]='<font color="white"><b><font size=4><img src="img/cuestionario/a12.png" width="400" height="200" /><br>36)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="k2" onClick="Engine(36, this.value)">a)7(7A*B)*(C*D))*7E<br><input type=radio value="b" name="k2" onClick="Engine(36, this.value)">b)(7(A*B)*(C*D))*7E<br><input type=radio value="c" name="k2" onClick="Engine(36, this.value)">c)7(A*7B)*(C*D))*7E<br><input type=radio value="d" name="k2" onClick="Engine(36, this.value)">d)7(A*B)*7(C*D))*7E<br></font>';
+  pre[36]='<font color="white"><b><font size=4><img src="img/cuestionario/a13.png" width="400" height="200" /><br>37)Expresar con sus operaciones booleanas</font></b></font><p><font color="white" size=4><input type=radio value="a" name="l2" onClick="Engine(37, this.value)">a)7(A*B)*(C+D))*7E<br><input type=radio value="b" name="l2" onClick="Engine(37, this.value)">b)7(A+B)*(C+D))*7E<br><input type=radio value="c" name="l2" onClick="Engine(37, this.value)">c)7(A+B)*(C+D))+7E<br><input type=radio value="d" name="l2" onClick="Engine(37, this.value)">d)(A+B)+(C+D))+E<br></font>';
+  pre[37]='<font color="white"><b><font size=4>38)Es equivalente a la siguiente expresion: (A*B)+C</font></b></font><p><font color="white" size=4><input type=radio value="a" name="m2" onClick="Engine(38, this.value)">a)(A v B) v C<br><input type=radio value="b" name="m2" onClick="Engine(38, this.value)">b)(A v B) ꓥ C<br><input type=radio value="c" name="m2" onClick="Engine(38, this.value)">c)(A ꓥ B) ꓥ C<br><input type=radio value="d" name="m2" onClick="Engine(38, this.value)">d)(A ꓥ B) v C<br></font>';
+  pre[38]='<font color="white"><b><font size=4>39)Es equivalente a la siguiente expresion: (A+B)*C</font></b></font><p><font color="white" size=4><input type=radio value="a" name="n2" onClick="Engine(39, this.value)">a)(A v B) v C<br><input type=radio value="b" name="n2" onClick="Engine(39, this.value)">b)(A v B) ꓥ C<br><input type=radio value="c" name="n2" onClick="Engine(39, this.value)">c)(A ꓥ B) ꓥ C<br><input type=radio value="d" name="n2" onClick="Engine(39, this.value)">d)(A ꓥ B) v C<br></font>';
+  pre[39]='<font color="white"><b><font size=4>40)Es equivalente a la siguiente expresion: (A*B)</font></b></font><p><font color="white" size=4><input type=radio value="a" name="o2" onClick="Engine(40, this.value)">a)A v B<br><input type=radio value="b" name="o2" onClick="Engine(40, this.value)">b)7A v 7B<br><input type=radio value="c" name="o2" onClick="Engine(40, this.value)">c)A ꓥ B<br><input type=radio value="d" name="o2" onClick="Engine(40, this.value)">d)7A ꓥ 7B<br></font>';
+  pre[40]='<font color="white"><b><font size=4>41)Es equivalente a la siguiente expresion: (A+B)</font></b></font><p><font color="white" size=4><input type=radio value="a" name="p2" onClick="Engine(41, this.value)">a)7(A v B)<br><input type=radio value="b" name="p2" onClick="Engine(41, this.value)">b)7A v B<br><input type=radio value="c" name="p2" onClick="Engine(41, this.value)">c)A v 7B<br><input type=radio value="d" name="p2" onClick="Engine(41, this.value)">d)A v B<br></font>';
+  pre[41]='<font color="white"><b><font size=4>42)Es equivalente a la siguiente expresion: (A+B)*(A+B)</font></b></font><p><font color="white" size=4><input type=radio value="a" name="q2" onClick="Engine(42, this.value)">a)(7A v 7B) ꓥ (7A v 7B)<br><input type=radio value="b" name="q2" onClick="Engine(42, this.value)">b)(7A v B) ꓥ (7A v B)<br><input type=radio value="c" name="q2" onClick="Engine(42, this.value)">c)(A v 7B) ꓥ (A v 7B)<br><input type=radio value="d" name="q2" onClick="Engine(42, this.value)">d)(A v B) ꓥ (A v B)<br></font>';
+      
+
+  document.write("<form>");
+  for (n=0; n<=9; n++)
+  document.write('<br><br>'+pre[num[n]]+'<br<br>');
+  document.write("</form>");
+  document.write('<p> <CENTER><font color="#Black" size=2> <input type=button onClick="NextLevel()" value="Resultado" style="font-family: Comic Sans MS"></font> </CENTER></font>');
+  
+  
+  </SCRIPT>
+  <H1 align="center" ><li>
+    <a href="Cuestionario.html">Reintentar</a>
+  </li> </H1>
+        
+    
+      </ul>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Universidad Nacional Autónoma de México</p>
+  </footer>
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

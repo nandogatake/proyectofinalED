@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="nav-main">
+      <!-- Brand -->
+      <img src="img/brand.png" alt="UNAM" class="nav-brand">
+      <!-- Left Nav -->
+      <ul class="nav-menu">
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="Introduccion.html">Introducción</a>
+        </li>
+        <li>
+          <a href="Resumen.html">Resumen</a>
+        </li>
+        <li>
+            <a href="Ejemplos.html">Ejemplos</a>
+        </li>
+        <li>
+          <a href="Tutorial.html">Tutorial</a>
+        </li>
+        <li>
+          <a href="Bibliografia.html">Bibliografía</a>
+        </li>
+        <li>
+          <a href="Cuestionario.html">Cuestionario</a>
+        </li>
+    
+      </ul>
+
+      <!-- Right Nav -->
+      <ul class="nav-menu-right">
+        <li>
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- generar la linea abajo del buscador -->
+    <hr> 
+    <div>
+        <H1 align="center" > Aplicación: circuitos lógicos digitales </H1>
+        <p>En la década de 1930, un joven estudiante de graduados del Instituto Tecnológico de Massachusetts, llamado Claude Shannon observó una analogía entre el funcionamiento de dispositivos de computación, tales como el conmutador telefónico: circuitos y las operaciones de conectores lógicos. Utilizo esta analogía con un éxito sorprendente para resolver problemas de diseño de circuitos y lo escribió en su tesis de maestría, que fue publicada
+          en 1938.
+        </p>
+        <p>El dibujo muestra la presencia de dos posiciones de un interruptor simple. Cuando se cierra el interruptor la corriente puede fluir de una terminal a la otra, cuando está abierto la corriente no puede fluir. Imagínese que dicho interruptor es parte del circuito que se muestra en la figura. El foco se enciende si y solo si la corriente fluye a través de él y esto ocurre si y solo si el interruptor está cerrado. </p>
+        <H1 align="center" > <img src="img/figura_1.png" width="400" height="200"  /> </H1>
+        <p>Ahora consideremos los circuitos más complicados de las figuras a) y b).</p>
+        <H1 align="center" > <img src="img/figura_2.png" width="400" height="200"  /> </H1>
+        <p>En el circuito de la figura a) la corriente fluye y se enciende el foco, si y solo si ambos interruptores P y Q están cerrados. Los interruptores de este circuito se dice que están en serie. En el circuito de la figura b) la corriente fluye y el foco se enciende si y solo si al menos uno de los interruptores P o Q está cerrado. Los interruptores de este circuito se dice que están en paralelo. En la tabla se describen todos los posibles comportamientos de estos circuitos.</p>
+        <H1 align="center" > <img src="img/figura_3.png" width="400" height="200"  /> </H1>
+        <p>Circuitos más complicados corresponden a expresiones lógicas más complicadas. Esta
+          correspondencia se ha utilizado ampliamente en el diseño y estudio de los circuitos.</p>
+        <p>En la década de 1940 y 1950, se reemplazaron los interruptores por dispositivos electrónicos, con estados físicos de abierto y cerrado correspondientes con los estados electrónicos, tales como alto y bajo voltaje. La nueva tecnología electrónica condujo al desarrollo de modernos sistemas digitales tales como computadoras electrónicas y sistemas electrónicos. </p>
+        <p>Los componentes electrónicos básicos de un sistema digital se llaman circuitos lógicos digitales. La palabra lógica indica el importante papel de la lógica en el diseño de estos circuitos y la palabra digital indica que los circuitos se procesan en señales discretas o por separado y señales opuestas a las continuas.</p>
+        <p>Los ingenieros eléctricos continúan utilizando el lenguaje de la lógica cuando se refieren
+          a los valores de las señales producidas por un interruptor electrónico como “verdadero” o
+          “falso”. Por lo general utilizan los símbolos 1 y 0 en lugar de V y F para indicar estos
+          valores. Los símbolos 0 y 1 se llaman bits, abreviatura de dígitos binarios. Esta terminología
+          se introdujo en 1946 por el estadístico John W. Tukey.</p>
+          <H1 align="center" > Cajas negras y puertas </H1>
+        <p>Las combinaciones de señales de bits (1 y 0) se pueden transformar en otras combinaciones
+          de señales de bits (1 y 0) a través de varios circuitos. </p>
+        <p>Los ingenieros informáticos y diseñadores de sistemas digitales encontraron útil pensar en ciertos circuitos básicos como cajas negras. El interior de una caja negra contiene la  detallada del circuito que con frecuencia se ignora, mientras la atención se centra en la relación entre las señales de entrada y salida</p>
+        <H1 align="center" > <img src="img/figura_4.png" width="200" height="100"  /> </H1>
+        <p>El funcionamiento de una caja negra se especifica completamente construyendo una
+          tabla de entrada/salida que enumera todas sus posibles señales de entrada junto con sus
+          señales de salida correspondientes. Por ejemplo, la caja negra de la figura anterior tiene
+          tres señales de entrada. Puesto que cada una de estas señales puede tomar el valor 1 o 0,
+          hay ocho posibles combinaciones de las señales de entrada. Una posible correspondencia
+          de las señales de entrada y salida es la siguiente:</p>
+          <H1 align="center" > <img src="img/figura_5.png" width="400" height="200"  /> </H1>
+          <H1 align="center" > COMPUERTAS LÓGICAS </H1>
+          <p>Un método eficiente para el diseño de circuitos más complicados es construir conectando
+            circuitos cajas negras menos complicados. Tres de estos circuitos se conocen como
+            las puertas <strong>NOT, AND y OR.</strong>
+            </p>
+            <p>Una puerta <strong>NOT</strong> (o inversor) es un circuito con una señal de entrada y una señal de salida. Si la señal de entrada es 1, la señal de salida es 0. Por el contrario, si la señal de entrada es 0, entonces la señal de salida es 1. </p>
+          <p>Una puerta <strong>AND</strong> es un circuito con dos señales de entrada y una señal de salida. Si las dos señales de entrada son 1, entonces la señal de salida es 1. De lo contrario, la señal de salida es 0. </p>
+            <p>Una puerta <strong>OR</strong> también cuenta con dos señales de entrada y una señal de salida. Si las dos señales de entrada son 0, entonces la señal de salida es 0. De lo contrario, la señal de salida es 1.</p>
+            <p>Las acciones de las puertas NOT, AND y OR se resumen en la figura, donde P y Q representan las señales de entrada y R representa la señal de salida. Debe quedar claro los conectores lógicos "7", "^" y "v" de los enunciados.</p>
+            
+            <H1 align="center" > <img src="img/figura_6.png" width="600" height="400"  /> </H1>
+            <H1 align="center" > Reglas para un circuito combinacional </H1>
+            <p align="center">*Un único cable de entrada se puede separar en dos y utilizarlo como entrada para dos puertas separadas.</p>
+            <p align="center">*Un cable de salida se puede utilizar como entrada. </p>
+            <p align="center">*La no salida de una puerta puede eventualmente alimentar de nuevo esa puerta. </p>
+            <H1 align="center" > La expresión booleana correspondiente a un circuito </H1>
+            <p>En lógica, variables tales como p, q y r representan enunciados y un enunciado puede
+              tener uno de los dos valores de verdad: V (verdadero) o F (falso). Una forma de enunciado
+              es una expresión, tal como p ^ (7q v r), compuesto por variables de enunciado y conectores lógicos.
+              </p>
+            <p>Una expresión compuesta de variables booleanas y conectores "7", "^" y "v" se denomina una expresión booleana. Dado un circuito que consiste de la combinación de las puertas NOT, AND y OR, se puede obtener una expresión booleana correspondiente siguiendo las acciones de las puertas de las variables de entrada.</p>
+            <H1 align ="center">Resumen de las operaciones booleanas</H1>
+            <p>Las reglas para las operaciones OR, AND y NOT pueden resumirse de la siguiente
+              manera:
+              </p>
+              <H1 align="center" > <img src="img/ab12.png" width="600" height="400"  /> </H1>
+            <H1 align ="center">Circuitos que contienen inversores</H1>
+              <p>Siempre que haya un inversor presente en el diagrama de un circuito lógico, la
+                expresión de su salida es en sí igual a la expresión de la entrada con una barra sobre
+                ella. 
+                </p>
+            <H1 align="center" > Determinación de un circuito que corresponde a una tabla dada de entrada/salida </H1>
+            <p>Hasta el momento, hemos analizado la forma de construir la tabla de entrada/salida de un
+              circuito, como encontrar la expresión booleana correspondiente para un circuito dado y como
+              construir el circuito que corresponde a una expresión booleana dada. Ahora trataremos el
+              tema de como diseñar un circuito (o encontrar una expresión booleana) que corresponda
+              a una tabla dada de entrada/salida. La forma de hacerlo es poner varios reconocedores
+              juntos en paralelo.
+              </p>
+              <H1 align="center" > Simplificación de circuitos combinacionales </H1>
+              <p>Considere los dos circuitos combinacionales que se muestran en la figura</p>
+            <H1 align="center" > <img src="img/figura_7.png" width="400" height="200"  /> </H1>
+              <p>Si sigue al circuito a), encontrará que su tabla de entrada/salida es:</p>
+              <H1 align="center" > <img src="img/figura_8.png" width="400" height="200"  /> </H1>
+            <p>Esta tabla es la misma para ambos circuitos. Así que estos dos circuitos hacen
+              el mismo trabajo en el sentido de que se transforman las mismas combinaciones de señales de entrada en las mismas señales de salida. Sin embargo, el circuito b) es más simple que el circuito a), ya que contiene muchas menos puertas lógicas. Por lo tanto como parte de un circuito integrado, ocupan menos espacio y requieren de menos energía.
+              </p>
+              <H1 align="center" > Puertas NAND y NOR </H1>
+              <p>Otra forma de simplificar un circuito consiste en encontrar un circuito equivalente que utilice
+                el menor número de diferentes tipos de puertas lógicas. Dos puertas que no se presentaron
+                antes pero que son particularmente útiles para esto son: las puertas NAND y NOR. Una
+                puerta NAND es una sola puerta que actúa como una puerta AND seguida de una puerta
+                NOT. Una puerta NOR actúa como una puerta OR seguida de una puerta NOT. Así, la señal
+                de salida de la puerta NAND es 0 cuando y solo cuando, ambas señales de entrada son 1
+                y la señal de salida para una puerta NOR es 1 cuando y solo cuando ambas señales son 0.
+                Los correspondientes símbolos lógicas de estas puertas son | (para NAND) y ↓ (para NOR)
+                donde | se llama trazo de Sheffer y ↓ se llama una flecha de Peirce. 
+                </p>
+                <p>Así P | Q ≡ 7(P ^ Q) y P ↓ Q ≡  7(P v Q).</p>
+                <p>La tabla que se presenta a continuación resume las acciones de las puertas NAND y
+                  NOR.
+                  </p>
+              <H1 align="center" > <img src="img/figura_9.png" width="600" height="400"  /> </H1>
+              <H1 align ="center">PROCESO DE DISEÑO</H1>
+              <P>
+                1.Se plantea la tabla de verdad de la función lógica asociada.
+              </P>
+              <p>2.Se simplifica la función mediante el correspondiente mapa de karnaugh.
+              </p>
+              <p>
+                3.Se crea el esquema electrónico del circuito 
+              </p>
+              <H1 align ="center">Ejemplo</H1>
+              <p>
+              Con base en las siguiente función especificada para el circuito construir dicho circuito. 
+              </p>
+              <p>f(a,b,c)=Σm(0,3,4)</p>
+              <p>Generamos la tabla de verdad</p>
+              <H1 align="center" > <img src="img/imagenparaejemploresumen.JPG" width="600" height="400"  /> </H1>
+             <p>Correspondenciaf(a,b,c)= Σm(0,3,4)</p>
+             <p>f(a,b,c)= Σm(0,3,4)</p>
+             <p>=0+3+4 </p>                        
+             <p>=000+011+100</p>
+             <p>=a’b’c’+a’bc+ab’c’</p>
+             <p>Generamos el mapa de karnaugth</p>
+             <H1 align="center" > <img src="img/mapadekar.JPG" width="600" height="400"  /> </H1>
+             <p>por lo cual llegamos a la expresión final: </p>
+             <H1 align ="center">S=a’bc+b’c’</H1>
+             <p>El diseño del circuito queda la siguiente forma:</p>
+             <H1 align="center" > <img src="img/img.jpeg" width="600" height="400"  /> </H1>
+
+
+      
+      
+          </div>
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Universidad Nacional Autónoma de México</p>
+  </footer>
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
